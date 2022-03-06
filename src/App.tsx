@@ -1,5 +1,5 @@
 import React, { useEffect, useState} from "react";
-
+import "./index.css"
 import Chart from "react-google-charts";
 
 
@@ -30,6 +30,13 @@ export default function App(){
 
 
     const [dataset,setDataset]=useState(data1)
+    var options = {
+
+        colorAxis: {colors: ['#00853f', 'black', '#FFFF00']},
+        backgroundColor: '#81d4fa',
+        datalessRegionColor: '#f8bbd0',
+        defaultColor: '#f5f5f5',
+    };
 
 
     useEffect(()=>{console.log(dataset)},dataset)
@@ -41,11 +48,11 @@ export default function App(){
 
     return (
         <div className="App">
-          <select name="change_table"  onChange={(e)=>dataChange(e)}>
+          <select name="change_table"  onChange={(e)=>dataChange(e)} className="changeTable">
             <option value="first" >first</option>
             <option value="second" >second</option>
           </select>
-          <Chart chartType="GeoChart" width="100%" height="400px" data={dataset} />
+          <Chart chartType="GeoChart" width="100%" height="500px" data={dataset} options={options} />
         </div>
     );
 
