@@ -40,7 +40,7 @@ export default function App(){
 
 
     useEffect(()=>{console.log(dataset)},dataset)
-    const dataChange =(e:React.ChangeEvent<HTMLInputElement>) => {
+    const dataChange =(e:React.ChangeEvent<HTMLSelectElement>) => {
         if(e.target.value=="first") {setDataset(data1)}
         else if(e.target.value=="second"){setDataset(data2)}
 
