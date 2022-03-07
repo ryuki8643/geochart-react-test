@@ -10,7 +10,9 @@ const data1 = [
   ["Brazil", 400],
   ["Canada", 500],
   ["France", 600],
-  ["RU", 700]
+  ["RU", 700],
+  ["Australia",300],
+    ["japan",1000]
 ];
 
 
@@ -21,19 +23,11 @@ const data2 = [
     ["Brazil", 400],
     ["Canada", 300],
     ["France", 200],
-    ["RU", 100]
+    ["RU", 100],
+
 ];
 
-var a={"test1":{
-    "Country":"Popularity",
-        "Germany":700,
-        "United States": 600,
-        "Brazil":400,
-        "Canada":300,
-        "France":200,
-        "RU":100
-}
-}
+
 
 const dataStats={"first":data1,"second":data2}
 
@@ -59,9 +53,13 @@ export default function App(){
             hoverTableRow: 'highlightClass'}
     };
     var pieChartOption={
-        chartArea:{left:'20%',top:20,width:'170%',height:'170%'},
-        fontSize:16
+        chartArea:{left:"0%",top:20,width:'60%',height:'80%'},
+        fontSize:12,
+        tooltip:{textStyle: {fontSize: 15,bold:true}, showColorCode: true},
+
+        legend:{position: 'bottom', maxLines:2,textStyle: {color: 'blue', fontSize: 11}}
     }
+
 
 
 
@@ -78,11 +76,11 @@ export default function App(){
             <option value="second" >second</option>
           </select>
           <Chart chartType="GeoChart" width="100%" height="500px" data={dataset} options={options}  />
-          <tr>
-          <th><Chart className="tableCLass" chartType="Table" width="100%" height="100%" data={dataset}  options={tableOption}/></th>
+          <div className="chartParent">
+          <div><Chart className="tableCLass" chartType="Table"  data={dataset} width="100%" height="200px" options={tableOption}/></div>
 
-          <th><Chart className="pieChartClass" chartType="PieChart" width="100%" height="100%" data={dataset}  options={pieChartOption}/></th>
-          </tr>
+          <div><Chart className="pieChartClass" chartType="PieChart" data={dataset} width="100%" height="200px" options={pieChartOption}/></div>
+          </div>
 
         </div>
     );
