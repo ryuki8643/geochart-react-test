@@ -24,6 +24,16 @@ const data2 = [
     ["RU", 100]
 ];
 
+var a={"test1":{
+    "Country":"Popularity",
+        "Germany":700,
+        "United States": 600,
+        "Brazil":400,
+        "Canada":300,
+        "France":200,
+        "RU":100
+}
+}
 
 const dataStats={"first":data1,"second":data2}
 

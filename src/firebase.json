@@ -1,0 +1,8 @@
+{
+  "hosting": {
+    "site": "gdsc-keio-solution2",
+
+    "public": "public",
+    ...
+  }
+}
