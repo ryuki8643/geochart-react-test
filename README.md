@@ -1,3 +1,15 @@
+![地図](/src/img/geochart_map_react_google.PNG)
+react　hooks typescriptでgoogle chartの機能ののgeochartを使って遊んでみました
+機能としては
+
+・マップ＋表＋円グラフの表示
+・一番上のリストボックスからデータを選べる(データは2列の表、今回は国名＋人口にしてみた)
+・mapの全部分を埋めるデータの実装
+・mapの下部にボタンを設置しクリックすると地域ごとに拡大可能
+・表のcolumnをクリックするとソート可能
+・スマホ、pc両方のブラウザから見やすいようにブラウザサイズに依存して地図等の大きさが変わる
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
