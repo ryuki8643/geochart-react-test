@@ -295,7 +295,7 @@ export default function App(){
         sizeAxis: { minValue: 100, maxValue: 100 },
 
         colorAxis: {colors: ['#00853f', 'black', '#FFFF00']},
-        legend:{textStyle: {color: 'black', fontSize: 30}},
+        legend:{textStyle: {color: 'black', fontSize: 10}},
         tooltip:{textStyle: {fontSize: 30,bold:true}, showColorCode: true},
 
         backgroundColor: '#81d4fa',
@@ -343,8 +343,8 @@ export default function App(){
               <button className="regionButton" onClick={()=>setRegions("world")}>World</button>
               <button className="regionButton" onClick={()=>setRegions("002")}>Africa</button>
               <button className="regionButton" onClick={()=>setRegions("150")}>Europe</button>
-              <button className="regionButton" onClick={()=>setRegions("021")}>North Americas</button>
-              <button className="regionButton" onClick={()=>setRegions("005")}>South Americas</button>
+              <button className="regionButton" onClick={()=>setRegions("021")}>North America</button>
+              <button className="regionButton" onClick={()=>setRegions("005")}>South America</button>
               <button className="regionButton" onClick={()=>setRegions("142")}>Asia</button>
               <button className="regionButton" onClick={()=>setRegions("009")}>Oceania</button>
 
