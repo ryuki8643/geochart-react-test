@@ -62,8 +62,10 @@
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
 }
 .regionButton{
-    font-size: 85%;
+
+    font-size: 80%;
     width: 14.28%;
+
 }
 .chartParent{
     display:flex;
