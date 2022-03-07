@@ -12,7 +12,7 @@ const data1 = [
   ["France", 600],
   ["RU", 700],
   ["Australia",300],
-    ["japan",1000]
+    ["japan",1002]
 ];
 
 
