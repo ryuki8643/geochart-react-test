@@ -1,5 +1,5 @@
 ![地図](/src/img/geochart_map_react_google.PNG)
-react　hooks typescriptでgoogle chartの機能ののgeochartを使って遊んでみました
+
 機能としては
 
 ・マップ＋表＋円グラフの表示
