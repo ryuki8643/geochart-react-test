@@ -1,4 +1,4 @@
-![地図](/src/img/geochart_map_react_google.PNG)
+
 
 機能としては
 
